@@ -45,7 +45,7 @@ useEffect(() => {
         
         if (!datiRegistrazione.username || !datiRegistrazione.email || !datiRegistrazione.password) {
             errors.push("ERRORE: I campi non possono essere vuoti");
-            return errors; // Usciamo subito se i campi sono vuoti
+            return errors;
         }
 
         if (datiRegistrazione.username.length < 3) {

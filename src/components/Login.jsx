@@ -15,7 +15,7 @@ import { useNavigate } from 'react-router-dom';
             navigate("/registra");
         }
         const vaiAlGestore = () => {
-            navigate("/registra-gestore");  // Usa lo stesso path definito nel router
+            navigate("/registra-gestore");
         }
     
         const validateForm = () => {
@@ -48,8 +48,7 @@ import { useNavigate } from 'react-router-dom';
             try {
                 const response = await axios.post('http://localhost:8080/api/utenti/login', datiLogin);
                 console.log("Login effettuato: ", response.data);
-                // Aggiungi qui il navigate dopo il login successful
-                navigate('/dashboard'); // o dove vuoi che vada dopo il login
+                navigate('/dashboard');
             } catch (err) {
                 setError("Username o password non validi");
                 console.error("Errore durante la login", err);

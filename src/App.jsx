@@ -10,7 +10,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Navigate to="/login" />,
-    errorElement: <div>Pagina non trovata</div>  // Aggiungi un elemento di errore
+    errorElement: <div>Pagina non trovata</div> 
   },
   {
     path: "/login",
